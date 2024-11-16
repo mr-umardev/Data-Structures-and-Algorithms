@@ -13,7 +13,7 @@ public:
             return false;
         }
         unordered_set<ListNode*>visited;
-        while(head){
+        while(head!=NULL){
             visited.insert(head);
             head=head->next;
             if(visited.count(head)){
